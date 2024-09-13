@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color:#fe612e;
+    font-style: italic;
+    font-weight: 900;
+}
+
+main {
+    padding: 2.25em 2em;
+}
+
+
+header {
+    padding: 1em 2em;
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header, button {
+    background-color: #fe612e;
+}
+
+header h1, button, header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a {
+    font-weight: 700;
+}
+
+nav li {
+    list-style: none;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+section h2 {
+    padding-bottom: 1em;
+    border-bottom: 4px solid #fe612e;
+    margin-bottom: 2em;
+}
+
+#sobre picture img {
+    margin-bottom: 2em;
+}
+
+#produtos li {
+    list-style: none;
+}
+
+#produtos img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+article {
+    margin-bottom: 2em;
+}
+
+article h3 {
+    font-size: 1.5em;
+    padding: .75em 0;
+    color: black;
+    font-style: normal;
+}
+
+article button {
+    width: 100%;
+    padding: .5em;
+    font-size: 1.17em;
+    font-weight: 700;
+    border: none;
+    border-radius: .25em;
+    margin: .75em 0;
+}
+
+article button:hover {
+    cursor: pointer;
+}
+
+@media screen and (min-width: 640px) {
+    #produtos ul {
+        display: grid;
+        grid-template-columns: 49% 49%;
+        column-gap: 2%;
+    }
+
+    nav li {
+        display: inline;
+        margin-left: 1em;
+    }
+
+    main {
+        padding: 2.25em 10%;
+    }
+    
+    header {
+        padding: 1.5em 10%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        padding: 2.25em 0;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    header {
+        padding: 1.5em 0;
+    }
+
+    header div {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    #produtos ul {
+        grid-template-columns: repeat(4, 23.5%);
+    }
+
+    #produtos img {
+        height: 200px;
+    }
+
+    #sobre {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #sobre picture {
+        width: 40%;
+    }
+
+    #sobre div {
+        width: 55%;
+    }
+}
