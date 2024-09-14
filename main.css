@@ -6,7 +6,7 @@
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -66,7 +66,6 @@ section h2 {
 }
 
 #produtos img {
-    height: 300px;
     width: 100%;
     object-fit: cover;
 }
@@ -135,10 +134,6 @@ article button:hover {
 
     #produtos ul {
         grid-template-columns: repeat(4, 23.5%);
-    }
-
-    #produtos img {
-        height: 200px;
     }
 
     #sobre {
